@@ -8,6 +8,15 @@
 <title>卦檐</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+/* 主题化滚动条（结果弹窗） */
+.modal-content{scrollbar-width:thin;scrollbar-color:#c9bfa8 transparent}
+body.night .modal-content{scrollbar-color:#5a4a33 transparent}
+.modal-content::-webkit-scrollbar{width:8px}
+.modal-content::-webkit-scrollbar-track{background:transparent}
+.modal-content::-webkit-scrollbar-thumb{background:#c9bfa8;border-radius:8px;border:2px solid transparent;background-clip:padding-box}
+.modal-content::-webkit-scrollbar-thumb:hover{background:#b8ad98;border:2px solid transparent;background-clip:padding-box}
+body.night .modal-content::-webkit-scrollbar-thumb{background:#5a4a33;border:2px solid transparent;background-clip:padding-box}
+body.night .modal-content::-webkit-scrollbar-thumb:hover{background:#6b5a40;border:2px solid transparent;background-clip:padding-box}
 body{min-height:100vh;font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#2b2620;overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:transparent;
 background:linear-gradient(180deg,#f7f4ec 0%,#ece7da 60%,#e3ddcd 100%);transition:background .8s,color .8s;--tile:#2b2620}
 body.night{background:linear-gradient(180deg,#1a140d 0%,#120d07 60%,#0a0704 100%);color:#e8dcc4;--tile:#0d0a06}
